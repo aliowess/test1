@@ -1,7 +1,7 @@
 ---
 
 [system-server]
-localhost
+127.0.0.1
 
 [log-server]
-localhost
+127.0.0.1
