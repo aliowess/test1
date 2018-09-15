@@ -1,11 +1,15 @@
 ---
 - hosts: all
+  become: true
   tasks:
     - name: test for firt time
       ping:
-    - name: update
-      yum: name=* state=latest update_cache=yes
-    - name: install firefox
+    - name: install firefox last version 1
+      yum: 
+       name: firefox
+       state: latest 
+       #update_cache=yes
+    - name: install firefox last version 2 
       yum: name=firefox state=latest
 
       
