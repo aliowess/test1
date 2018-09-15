@@ -14,5 +14,6 @@
 
       
 - hosts: all
+  become: true
   roles:
     - { role: motd }
