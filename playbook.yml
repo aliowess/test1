@@ -11,8 +11,4 @@
     - name: install firefox last version 2 
       yum: name=firefox state=latest
 
-      
-- hosts: system-server
-  become: true
-  roles:
-    - { role: motd }
+- import_playbook: playbook-sys.yml  

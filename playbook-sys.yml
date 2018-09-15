@@ -1,0 +1,4 @@
+- hosts: system-server
+  become: true
+  roles:
+    - { role: motd }
