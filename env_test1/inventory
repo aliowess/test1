@@ -1,0 +1,7 @@
+---
+
+[system-server]
+localhost
+
+[log-server]
+localhost
