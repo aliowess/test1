@@ -4,15 +4,5 @@
     - name: test for firt time
       ping:
     - name: install firefox last version 1
-      yum: 
-       name: firefox
-       state: latest 
-       #update_cache=yes
-    - name: install firefox last version 2 
-      yum: name=firefox state=latest
 
-      
-- hosts: all
-  become: true
-  roles:
     - { role: motd }
