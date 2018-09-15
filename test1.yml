@@ -12,7 +12,7 @@
       yum: name=firefox state=latest
 
       
-- hosts: all
+- hosts: system-server
   become: true
   roles:
     - { role: motd }
